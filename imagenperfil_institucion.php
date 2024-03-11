@@ -1,0 +1,58 @@
+<?php 
+    include("auth.php");
+    include("menu_institucion.php");
+    include("conexion.php");
+    $email = $_SESSION["usuario_institucion"];
+    $sql = "SELECT c.*, u.* FROM tbcliente c
+                JOIN tbusuario u ON c.idcliente = u.idcliente
+                WHERE u.email = '$email'";
+    $fila = mysqli_query($cn, $sql);
+    $r = mysqli_fetch_assoc($fila);
+?>
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title></title>
+        <link rel = "stylesheet" href = "CSS/Estiloinstitucion.css">
+        <style>
+            fieldset {
+                border: 1px solid #00539C;
+                padding: 10px;
+                width: 50%;
+                height: 50px;
+                background-color: rgba(255, 255, 255, 0.8);
+                margin: auto;
+            }
+
+            form {
+                text-align: center;
+            }
+
+            fieldset label {
+                color: #1E88E5;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <fieldset>
+            <form action = "p_imagenperfilinstitucion.php" method = "post" enctype = "multipart/form-data">
+                <center>
+                    <!-- Aplicar el estilo al texto -->
+                    <label>Escoger archivo (Solo .jpg)</label>
+                    <input type = "file" name = "archivo">
+                    <input type = "submit" value = "Cargar foto">
+                </center>
+            </form>
+            <br><br><br>
+            <?php 
+                if (isset($_GET["msj"])) {
+                    $mensaje = $_GET["msj"];
+                    echo "<center><h1 id='titulo'>$mensaje</h1></center>";
+                }
+            ?>
+        </fieldset>
+    </body>
+</html>

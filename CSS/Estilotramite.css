@@ -1,0 +1,80 @@
+body {
+    background-image: url("../img/fondo_tramite.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#cabecera {
+    width: 100%;
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+    margin: 0;
+    padding: 0;
+    max-height: 250px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #1E88E5; /* Color celeste para h2 */
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000; /* Borde Negro */
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 2px solid #45bceb;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Alinea el contenido de la tabla al centro */
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid #45bceb;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #1E88E5;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #E6F7FF;
+}
+
+tr:nth-child(odd) {
+    background-color: #B3E0FF;
+}
+
+fieldset {
+    text-align: center;
+    margin-top: 20px;
+    width: 78%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1); /* Fondo transparente blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #007bff; /* Borde de color azul */
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block; /* Cambiado de 'block' a 'inline-block' */
+    margin: auto; /* Esta línea no es necesaria, puedes eliminarla */
+    text-align: center;
+}

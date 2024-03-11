@@ -1,0 +1,96 @@
+/* Estilo del cuerpo */
+body {
+    background-image: url('../img/fondo_personal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo de encabezados h1, h2, h3 */
+h1, h2, h3 {
+    text-align: center;
+    color: #40C4FF; /* Celeste más claro */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000; /* Borde Negro */
+}
+
+/* Estilo de enlaces */
+.a {
+    background-color: #45bceb;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.a:hover {
+    background-color: rgb(11, 87, 230);
+}
+
+/* Estilo de imágenes */
+img {
+    margin-bottom: 10px;
+}
+
+/* Estilo de campos de entrada y textarea */
+input[type = "text"], input[type = "email"], input[type = "file"], input[type = "password"], select, textarea {
+    width: 300px;
+    padding: 5px;
+    border: 2px solid #45bceb;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo de botones de envío */
+input[type = "submit"], button {
+    background-color: #45bceb;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type = "submit"]:hover {
+    background-color: rgb(11, 87, 230);
+}
+
+/* Estilo de tablas */
+table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+th, td {
+    border: 1px solid #00539C; /* Celeste más claro */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #1E88E5; /* Celeste más oscuro */
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #E6F7FF;
+}
+
+tr:nth-child(odd) {
+    background-color: #B3E0FF;
+}
+
+#cabecera {
+    width: 100%;
+    background: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0)); /* Blanco a transparente */
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    display: block;
+    margin-bottom: 5px;
+}
