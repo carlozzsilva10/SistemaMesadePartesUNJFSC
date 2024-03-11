@@ -115,6 +115,9 @@
             <center>
                 <input type = "submit" value = "Actualizar datos">
             </center>
+            <br>
+            <br>
+            <br>
         </form>
         <script>
             function validarFormulario() {
