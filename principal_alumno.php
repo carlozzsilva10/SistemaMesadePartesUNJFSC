@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include("auth.php");
 	include("menu_alumno.php");
 	include("conexion.php");
